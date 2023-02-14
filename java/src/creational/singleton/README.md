@@ -43,5 +43,5 @@ retornará o objeto em cache.
 
 # Observações
 - A implementação do Singleton contida neste repositório é apenas um exemplo para melhor entendimento e
-não necessariamente seria a melhor maneira (ou maneira ideal) de usar o padrão. 
+não necessariamente seria a melhor maneira (ou maneira ideal) de usar o padrão em uma aplicação real e complexa. 
 
