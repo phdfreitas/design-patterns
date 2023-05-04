@@ -1,25 +1,21 @@
 # Singleton
 Padrão de projeto criacional que garante que uma classe tenha apenas uma instância
 enquanto provê um ponto de acesso global para essa instância. Por exemplo, 
-em projetos onde há a necessidade de uma infraestrutura de _logs de dados_ seria possível
-fazer a implementação de uma classe usando o *Singleton.*
+em projetos onde há a necessidade de uma infraestrutura de _logs de dados_ seria possível fazer a implementação de uma classe usando o *Singleton.*
 
 # Problema
-> Com o *Singleton* dois problemas são resolvidos de uma só vez. Isso viola o princípio
-> de responsabilidade única (SOLID)
+> Com o *Singleton* dois problemas são resolvidos de uma só vez. No entanto, isso viola o princípio de responsabilidade única (SOLID)
 
-Seguem os dois problemas resolvidos com Singleton:
+Os dois problemas resolvidos com Singleton são:
 
 1. *Uma única instância por classe*
 2. *Ponto de acesso global para instância criada*
 
 # Solução
-Qualquer implementação do *Singleton* possuem os dois passos a seguir: 
+Qualquer implementação do *Singleton* possui os dois passos a seguir: 
 
 1. *Construtor privado.* Dessa maneira não será possível criar novas instâncias da classe. 
-2. *Criação de um método estático que servirá como um construtor.* Nesse caso, o método vai chamar o
-construtor privado, criará um objeto e vai salva-lo. Qualquer chamada posterior a esse método
-retornará o objeto em cache. 
+2. *Criação de um método estático que servirá como um construtor.* Nesse caso, o método vai chamar o construtor privado, criará um objeto e vai salva-lo. Qualquer chamada posterior a esse método retornará o objeto em cache. 
 
 # Implementação
 1. Atributo privado e estático na classe
@@ -42,6 +38,5 @@ retornará o objeto em cache.
    (Consideravelmente "old", mas ainda assim é uma referência :) )
 
 # Observações
-- A implementação do Singleton contida neste repositório é apenas um exemplo para melhor entendimento e
-não necessariamente seria a melhor maneira (ou maneira ideal) de usar o padrão em uma aplicação real e complexa. 
+- A implementação do Singleton contida neste repositório é apenas um exemplo para melhor entendimento e não necessariamente seria a melhor maneira (ou maneira ideal) de usar o padrão em uma aplicação real e complexa. 
 
